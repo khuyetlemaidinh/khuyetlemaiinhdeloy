@@ -1,3 +1,4 @@
+//server.js
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
@@ -15,7 +16,7 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: '2124801030169@student.tdmu.edu.vn', 
-        pass: 'maoivitchet169', 
+        pass: 'pjzo lxnp pymi hyvz', 
     },
 });
 app.post('/send-email', (req, res) => {
@@ -39,6 +40,6 @@ app.post('/send-email', (req, res) => {
 });
 
 // Chạy server trên localhost
-app.listen(PORT, '192.168.1.5', () => {
-    console.log(`Server đang chạy trên http://192.168.1.5:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server đang chạy trên http://192.168.2.122:${PORT}`);
 });
